@@ -1,5 +1,8 @@
 import { PaletteColor } from '@mui/material';
 
+export declare type ThemeMode = 'light' | 'dark';
+export declare type ThemeModeSetting = 'light' | 'dark' | 'system';
+
 export interface OdbTheme {
   meta: {
     theme: {

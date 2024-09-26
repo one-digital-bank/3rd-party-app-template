@@ -1,18 +1,19 @@
 import { Menu } from '@mui/icons-material';
 import { AppBar, Container, Divider, Grid2, IconButton, Toolbar, useTheme } from '@mui/material';
 import { Button } from 'app/components/Button';
-import { Text } from 'app/components/Text';
-import React, { useEffect } from 'react';
+import { Link } from 'app/components/Link';
 import { Paper } from 'app/components/Paper';
 import { Segment } from 'app/components/Segment';
-import { Link } from 'app/components/Link';
+import { Text } from 'app/components/Text';
+import React, { useEffect } from 'react';
+import { withThemeProvider } from 'app/utils/theme.utils';
 
 const App = (): React.JSX.Element => {
   const { palette } = useTheme();
 
   useEffect(() => {
     document.body.style.background = palette.background.default;
-  }, []);
+  }, [palette]);
 
   return (
     <>
@@ -61,4 +62,4 @@ const App = (): React.JSX.Element => {
   );
 };
 
-export default App;
+export default withThemeProvider(App);
