@@ -9,4 +9,4 @@ In this repo, we're showcasing a basic setup of an app that uses the mui theme f
 - **Button**: The Button component wraps MUI's Button component and makes use of our design token.
 - **IconButton**: The IconButton wraps MUI's IconButton.
 
-This setup uses [rsbuild]{https://rsbuild.dev/} to build the app, as this is a faster bundler than webpack but still supports module federation, which we heavily rely on. As we could imagine that we'd offer an integration into our ecosystem through module federation, we decided to use rsbuild right away in this template too.
+This setup uses [rsbuild](https://rsbuild.dev/) to build the app, as this is a faster bundler than webpack but still supports module federation, which we heavily rely on. As we could imagine that we'd offer an integration into our ecosystem through module federation, we decided to use rsbuild right away in this template too.
