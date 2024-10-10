@@ -14,7 +14,20 @@ export default defineConfig({
     dataUriLimit: {
       font: Number.MAX_SAFE_INTEGER,
     },
+    distPath: {
+      js: '',
+      css: '',
+    },
+    filename: {
+      js: '[name].js',
+      css: '[name].css',
+    },
     assetPrefix: '.',
+  },
+  performance: {
+    chunkSplit: {
+      strategy: 'all-in-one',
+    },
   },
   source: {
     define: {

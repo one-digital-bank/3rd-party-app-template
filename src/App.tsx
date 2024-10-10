@@ -57,6 +57,7 @@ const App = (): React.JSX.Element => {
             </Grid2>
           </Segment>
         </Paper>
+        <dashboard-element></dashboard-element>
       </Container>
     </>
   );
