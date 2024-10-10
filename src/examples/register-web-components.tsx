@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
-import CustomDetailLayer from './CustomDetailLayerWebComponent';
-import DashboardElement from './DashboardElementWebComponent';
-import NextStepLayer from './NextStepLayerWebComponent';
+import CustomDetailLayer from './CustomDetailLayer';
+import DashboardElement from './DashboardElement';
+import NextStepLayer from './NextStepLayer';
 
 const registerWebComponents = () => {
   class CustomDetailLayerWebComponent extends HTMLElement {
